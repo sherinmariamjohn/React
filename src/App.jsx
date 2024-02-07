@@ -14,9 +14,7 @@ export default function App() {
    setCounter(prevCounter => prevCounter - 1); 
   } else {
     setCounter(counter -1); 
-
-    }
-    
+  }
   }
   
     return (
@@ -31,8 +29,8 @@ export default function App() {
         </Typography>
 
         <Stack direction="row" spacing={2}>
-        <Button variant="contained" onClick={handleAdd} >+</Button>
-        <Button variant="contained" onClick={handleSubtract} disabled={counter===0} >-</Button>
+        <Button variant="contained" onClick={handleAdd} >INCREMENT+</Button>
+        <Button variant="contained" onClick={handleSubtract} disabled={counter===0} >DECREMENT-</Button>
 
         </Stack>
 
@@ -45,7 +43,7 @@ export default function App() {
 }
 
      const BoxStyle={
-          backgroundColor:'#f7b5b5',
+          backgroundColor:'#827f7f',
           borderRadius:'5px',
           width:"40%",
           padding:"20px",
